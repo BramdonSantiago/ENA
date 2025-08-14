@@ -1,0 +1,74 @@
+.footer {
+    margin-top: -20px;
+    background-color: $sky;
+    overflow: hidden;
+    .footer__title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .nav {
+        .nav-link {
+            width: 0;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .footer__contact {
+        padding: 0;
+        li {
+            margin-bottom: 20px;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+    .footer__montain {
+        background-image: url(../img/5.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 100px;
+        @media screen and(min-width:768px) {
+            height: 200px;
+        }
+    }
+}
+.cloud {
+    background-image: url(../img/nube2.png);
+    width: 590px;
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.eagle {
+    position: relative;
+    top: -90px;
+    background-image: url(../img/aguila.gif);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// .eagle {
+//     margin-top: -200px; 
+//     width: 64px;
+// }
+// .bird {
+//     margin-top: -140px;
+//     background-image: url("http://www.iamramraj.com/demo/Flying_birds_CSS_animation_examples/bird-cells.svg");
+//     background-size: auto 100%;
+//     width: 86px;
+//     height: 125px;
+//     will-change: background-position;
+//     animation-name: fly-cycle;
+//     animation-timing-function: steps(10);
+//     animation-iteration-count: infinite;
+//     animation-duration: 1s;
+//     animation-delay: -0.5s;
+//     transform: rotate(45deg);
+// }
+// @keyframes fly-cycle {
+//     100% {
+//     background-position: -900px 0;
+//     }
+// }

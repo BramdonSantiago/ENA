@@ -1,0 +1,102 @@
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $h1-title;
+    z-index: 90;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+    border-bottom: 2px solid $title-green3;
+    .bx-menu {
+        @media screen and(min-width: 768px) {
+            display: none;
+        }
+    }
+    .nav {
+        &.header {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            background-color: $h1-title;
+            width: 100%;
+            text-align: center;
+            transform: scale(0);
+            box-shadow: 0 40px 40px 0 rgba(0, 0, 0, .1);
+            padding: 10px 0;
+            transition: all .6s ease-in;
+            &.active {
+                transform: scale(1);
+            }
+            @media screen and(min-width: 768px) {
+                position: unset;
+                text-align: unset;
+                width: unset;
+                display: flex;
+                transform: unset;
+                box-shadow: unset;
+                padding: unset;
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    .hero__video {
+        width: 100%;
+        vertical-align: top;
+    }
+    .hero__info {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        z-index: 20;
+        @media screen and(min-width: 576px) {
+            top: 20%;
+            left: 10%;
+        }
+    }
+    .hero__paragraph {
+        color: rgba(255, 255, 255, .8);
+        width: 100%;
+        @media screen and(min-width: 576px) {
+            width: 65%;
+        }
+        @media screen and(min-width: 992px) {
+            width: 50%;
+        }
+    }
+    .hero__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color:rgba(0, 0, 0, .2);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+}
+.wave-mobile,
+.wave-leftover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    svg {
+        fill: $h1-title;
+        width: 100%;
+    }
+}
+.wave-mobile {
+    @media screen and(min-width: 768px) {
+        display: none;
+    }
+}
+.wave-leftover {
+    display: none;
+    @media screen and(min-width: 768px) {
+        display: block;
+    }
+}
+

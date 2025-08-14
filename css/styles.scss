@@ -1,0 +1,140 @@
+/*COLORES*/
+$black: #333;
+$letter: #707070;
+$h1-title: #FFF;
+$h2-title: #FEE53B;
+$h2-title2: #c0a600;
+$title-green: #6B962D;
+$title-green2: #559200;
+$title-green3:#3e6b00;
+$btn-color: #4D4635;
+$btn-color-hover: #292419;
+$sky: #d2edf7;
+/*ALTERNATIVOS*/
+// $title-green3: #4b8100;
+// $title-green3: #447500;
+
+/*ESTILOS GENERALES*/
+body {
+    color: $black;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 90px;
+}
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: $h1-title;
+    margin-bottom: 10px;
+    font-weight: 900;
+    @media screen and (min-width: 576px) { 
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 65px;
+        margin-bottom: 40px;
+    }
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+    }
+}
+p {
+    margin: 0;
+    line-height: 1.7;
+    @media screen and (min-width: 576px) {
+        line-height: 2;
+    }
+}
+a {
+    color: $black;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/*CLASES GENERALES*/
+.nav-link {
+    color: $black;
+}
+.nav-link:hover {
+    color: #6b962d;
+}
+.bx-up-arrow-alt {
+    position: fixed;
+    top: -90px;
+    right: 2%;
+    z-index: 90;
+    background-color: $black;
+    color: $h1-title;
+    font-size: 32px;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+.btn-scroll-top {
+    top: 90%;
+    opacity: 1;
+    @media (max-width: 992px) and (orientation: landscape) {
+        top: 80%;
+    }
+}
+.bx-phone-call {
+    position: fixed;
+    bottom: -90px;
+    left: 2%;
+    z-index: 90;
+    background-color: $title-green3;
+    color: $h1-title;
+    font-size: 32px;
+    border-radius: 50%;
+    padding: 20px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+.btn-phone-call-scroll-top {
+    bottom: 5%;
+    opacity: 1;
+}
+.card {
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+    // border-bottom-left-radius: 90px;
+    // border-bottom-right-radius: 90px;
+}
+.btn {
+    letter-spacing: 2px;
+    border: none;
+    font-weight: 600;
+    border-radius: 0 !important;
+    font-size: 14px;
+    text-align: center;
+    transition: all .6s ease;
+    &.btn-primary {
+        background-color: $btn-color;
+        &.hvr-bounce-to-right:before {
+            background-color: $btn-color-hover !important;
+        }
+        &.hvr-bounce-to-top:before {
+            background-color: $btn-color-hover !important;
+        }
+    }
+}
+.bx-menu {
+    font-size: 32px;
+    color: $black
+}
+    
+
+@import '_header';
+@import '_main';
+@import '_footer';
